@@ -1,0 +1,25 @@
+<app-menu theme="light"></app-menu>
+
+<div class="wrapper">
+    <div class="box">
+        <div class="box-info">    
+            <p class="title">Material didático</p>
+            <p class="subtitle">Acesse suas últimas apresentações de aula.</p>
+        </div>
+        <div class="box-design">
+            <div class="item-design" *ngFor="let item of designs">
+                <a target="_blank" [href]="'https://editor.trakto.io/presentation/p/' + item['id']" class="box-thumb">
+                    <img [src]="item['thumbs']['raw']" class="item-thumb"/>
+                    <div class="item-slide">
+                        {{item["pages"]["length"]}} Slide<ng-container *ngIf="item['pages']['length'] > 1">s</ng-container>
+                    </div>
+                </a>
+                <a target="_blank" [href]="'https://editor.trakto.io/presentation/p/' + item['id']" class="item-title">
+                    <p>
+                        {{item["title"]}}
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

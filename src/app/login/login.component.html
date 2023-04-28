@@ -1,0 +1,22 @@
+<div class="center">
+    <img src="/assets/images/logo.png" alt="logo"/>
+
+    <p class="title">Olá, faça login em sua conta.</p>
+
+    <div class="field">
+        <label for="email" class="label">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Informe seu e-mail" [(ngModel)]="email" (keyup.enter)="login()"/>
+    </div>
+
+    <div class="field">
+        <label for="password" class="label">Senha</label>
+        <input type="password" id="password" name="password" placeholder="••••••••••" [(ngModel)]="password" (keyup.enter)="login()"/>
+    </div>
+
+    <button (click)="login()">
+        <span>
+            <fa-icon [icon]="faCircleNotch" [animation]="'spin'" [hidden]="buttonText === 'Entrar'"></fa-icon>
+            {{buttonText}}
+        </span>
+    </button>
+</div>

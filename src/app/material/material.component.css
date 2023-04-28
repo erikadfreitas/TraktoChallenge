@@ -1,0 +1,140 @@
+* {
+    overflow: hidden;
+}
+
+.wrapper {
+    padding: 0 64px;
+}
+
+.banner {
+    width: 100%;
+    margin: 60px 0 48px 0;
+}
+
+.box {
+    width: 100%;
+    height: 519px;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box-info {
+    padding: 56px 72px 45px 80px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+    gap: 8px;
+}
+
+.date {
+    padding: 4px 8px;
+    width: 250px;
+    background-color: #E4EBFB;
+    border-radius: 500px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #7183A6;
+    margin-bottom: 16px;
+}
+
+.arrow {
+    cursor: pointer;
+    margin-right: 23px;
+    padding: 0;
+}
+
+.arrow:hover {
+    opacity: 0.6;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #354564;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7183A6;
+}
+
+.box-design {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin-left: 72px;
+    gap: 32px;
+    height: 236px;
+    overflow: hidden;
+}
+
+.item-design {
+    min-width: 310px;
+}
+
+.item-design a {
+    text-decoration: none;
+}
+
+.item-thumb {
+    width: 310px;
+    height: 174px;
+    border-radius: 8px;
+}
+
+.item-slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 8px;
+    width: 66px;
+    height: 24px;
+    background: rgba(12, 12, 12, 0.7);
+    border-radius: 500px;
+    position: relative;
+    top: -52px;
+    left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #354564;
+    bottom: 38px;
+    position: relative;
+}
+
+.item-title p {
+    width: 310px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.see-all {
+    display: flex; 
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
+}
+
+.see-all:hover {
+    opacity: 0.6;
+}

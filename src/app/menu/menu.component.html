@@ -1,0 +1,20 @@
+<div [class.menu-light]="theme === 'light'" [class.menu-dark]="theme === 'dark'">
+    <img [class.logo-light]="theme === 'light'" [class.logo-dark]="theme === 'dark'"/>
+    <img src="assets/images/change-env.png" class="change-env" (click)="goToHome()" *ngIf="theme === 'light'" />
+    <div class="actions">
+        <img [class.calendar-light]="theme === 'light'" [class.calendar-dark]="theme === 'dark'"/>
+        {{today | date: 'shortDate'}}
+        <span [class.pipe-light]="theme === 'light'" [class.pipe-dark]="theme === 'dark'">|</span>
+        <img [class.notification-light]="theme === 'light'" [class.notification-dark]="theme === 'dark'"/>
+        <span [class.pipe-light]="theme === 'light'" [class.pipe-dark]="theme === 'dark'">|</span>
+        <div class="dropdown">
+            <img [src]="avatar" class="avatar"/>
+            <img [class.dropbtn-light]="theme === 'light'" [class.dropbtn-dark]="theme === 'dark'" />
+            <div class="dropdown-content">
+                <a (click)="logout()">
+                    <fa-icon [icon]="logoutIcon"></fa-icon> Sair
+                </a>
+              </div>
+        </div>  
+    </div>
+</div>

@@ -1,0 +1,135 @@
+.menu-light {
+    height: 76px;
+    background: #FFFFFF;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #7183A6;
+}
+
+.menu-dark {
+    height: 76px;
+    background: #252323;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #E4EBFB;
+}
+
+.logo-light {
+    margin-left: 65px;
+    width: 143px;
+    content: url("/assets/images/logo-edu-light.png");
+}
+
+.logo-dark {
+    margin-left: 65px;
+    width: 143px;
+    content: url("/assets/images/logo-edu-dark.png");
+}
+
+.actions {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 68px;
+}
+
+.calendar-light {
+    margin-right: 8px;
+    content: url("/assets/images/calendar-light.png");
+}
+
+.calendar-dark {
+    margin-right: 8px;
+    content: url("/assets/images/calendar-dark.png");
+}
+
+.pipe-light {
+    font-size: 25px;
+    color: #7183A6;
+    margin: 0 24px;
+    opacity: 0.32;
+}
+
+.pipe-dark {
+    font-size: 25px;
+    color: #E4EBFB;
+    margin: 0 24px;
+    opacity: 0.32;
+}
+
+.notification-light {
+    content: url("/assets/images/notification-light.png");
+}
+
+.notification-dark {
+    content: url("/assets/images/notification-dark.png");
+}
+
+.avatar {
+    cursor: pointer;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+
+.dropbtn-light {
+    content: url("/assets/images/arrow-down-light.png");
+    padding: 16px 0 16px 8px;
+}
+
+.dropbtn-dark {
+    content: url("/assets/images/arrow-down-dark.png");
+    padding: 16px 0 16px 8px;
+}
+  
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F1F1F1;
+    min-width: 90px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: #252323;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #DDDDDD;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.change-env {
+    margin-left: 56px;
+    cursor: pointer;
+}
+
+.change-env:hover {
+    opacity: 0.6;
+}
